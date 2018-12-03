@@ -15,11 +15,12 @@ public class RR {
        int n = 10;//Process ID
        int process[][] = new int[n + 1][4];
        System.out.println("\nCPU Scheduling using the Round Robin Algorithm\n");
+       System.out.println("Time quantum = 4");
        System.out.println("Process ID\t Burst");
        for(int i = 1; i <= n; i++)
        {
       process[i][1] = rand.nextInt(10)+1;//Number of Burst
-      System.out.printf("%d\t%10dms\n",i,process[i][1]);
+      System.out.printf("%d\t%20dms\n",i,process[i][1]);
      }
        System.out.println();
      
@@ -92,7 +93,7 @@ public class RR {
      System.out.println("Process ID\t WT  \t    TT  ");
      for(int i = 1; i <= n; i++)
      {
-      System.out.printf("%d\t%10dms\t%5dms",i,process[i][2],process[i][3]);
+      System.out.printf("%d\t%15dms\t%10dms",i,process[i][2],process[i][3]);
       System.out.println();
      }
      

@@ -20,8 +20,10 @@ public class FCFS {
        for(int i = 1; i <= n; i++)
        {
            process[i][1] = rand.nextInt(20)+1; //Random Set of Burst for each processess between 1 and 20
-           System.out.printf("%d\t%10dms\n",i,process[i][1]);
+           System.out.printf("%d\t %20dms\n",i,process[i][1]);
         }
+        
+        System.out.println();
        
      //Calculation of Total Time and Initialization of Gantt Chart array
      int total_time = 0;
@@ -81,7 +83,7 @@ public class FCFS {
      System.out.println("Process ID\t WT  \t    TT  ");
      for(int i = 1; i <= n; i++)
      {
-      System.out.printf("%d\t%10dms\t%5dms",i,process[i][2],process[i][3]);
+      System.out.printf("%d\t%15dms\t%10dms",i,process[i][2],process[i][3]);
       System.out.println();
      }
      

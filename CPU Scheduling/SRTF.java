@@ -19,7 +19,7 @@ public class SRTF {
        {
       process[i][0] = rand.nextInt(10);//Arrival Time
       process[i][1] = rand.nextInt(20)+1;//Random Set of Burst for each processess between 1 and 20 
-      System.out.printf("%d\t%10dms\t%10dms\n",i,process[i][0], process[i][1]);
+      System.out.printf("%d\t%20dms\t%10dms\n",i,process[i][0], process[i][1]);
      }
      System.out.println();
      
@@ -93,7 +93,7 @@ public class SRTF {
      System.out.println("Process ID\t WT  \t    TT  ");
      for(int i = 1; i <= n; i++)
      {
-      System.out.printf("%d\t%10dms\t%5dms",i,process[i][2],process[i][3]);
+      System.out.printf("%d\t%15dms\t%10dms",i,process[i][2],process[i][3]);
       System.out.println();
      }
      
